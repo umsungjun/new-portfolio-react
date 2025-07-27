@@ -31,7 +31,7 @@ export default function ProfileSwiper() {
             <img
               src={`${
                 import.meta.env.VITE_GOOGLE_DRIVE_IMG_URL
-              }${imgId}&sz=w1000`}
+              }${imgId}&sz=w250`}
               className="w-full"
               alt="profile"
             />
