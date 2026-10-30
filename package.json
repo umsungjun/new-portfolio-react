@@ -1,6 +1,9 @@
 {
   "name": "vite-project",
   "private": true,
+  "engines": {
+    "node": "24.x"
+  },
   "version": "0.0.0",
   "type": "module",
   "scripts": {
@@ -12,6 +15,7 @@
     "deploy": "aws s3 sync dist/ s3://umsungjun.site --delete"
   },
   "dependencies": {
+    "@channel.io/channel-web-sdk-loader": "^2.0.2",
     "date-fns": "^3.6.0",
     "google-auth-library": "^10.7.0",
     "google-spreadsheet": "^4.1.5",
@@ -34,9 +38,9 @@
     "eslint": "^8.57.1",
     "eslint-plugin-react-hooks": "^4.6.2",
     "eslint-plugin-react-refresh": "^0.4.26",
-    "postcss": "^8.5.15",
+    "postcss": "^8.5.32",
     "tailwindcss": "^3.4.19",
     "typescript": "^5.9.3",
-    "vite": "^7.3.5"
+    "vite": "^7.3.7"
   }
 }

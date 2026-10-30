@@ -1,13 +1,13 @@
-import { useEffect } from "react";
+import { useCallback, useEffect } from "react";
 import { useImagePreviewStore } from "../../../../../../store/useImagePreviewStore";
 
 export default function ImagePreView() {
   const { imageUrl, setOpenImagePreview, setImageUrl } = useImagePreviewStore();
 
-  const handleClose = () => {
+  const handleClose = useCallback(() => {
     setOpenImagePreview(false);
     setImageUrl(null);
-  };
+  }, [setOpenImagePreview, setImageUrl]);
 
   useEffect(() => {
     const escKeyModalClose = (e: KeyboardEvent) => {
@@ -17,7 +17,7 @@ export default function ImagePreView() {
     };
     window.addEventListener("keydown", escKeyModalClose);
     return () => window.removeEventListener("keydown", escKeyModalClose);
-  }, []);
+  }, [handleClose]);
 
   return (
     <div className="fixed z-10 web:w-1/2 w-4/5 max-h-[50vh] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  max-w-11/12 bg-white p-2 pt-8 rounded-lg shadow-md flex justify-center">
