@@ -3,7 +3,7 @@ import VideoPlayer from "./videoPlayer";
 
 type ProjectComponent = {
   title: string;
-  imgId?: string;
+  imgSrc?: string;
   videoId?: string;
   date: string;
   stack: string;
@@ -15,7 +15,7 @@ type ProjectComponent = {
 export default function ProjectComponent({
   title,
   videoId,
-  imgId,
+  imgSrc,
   date,
   stack,
   desc,
@@ -26,10 +26,10 @@ export default function ProjectComponent({
 
   return (
     <div className="bg-blue-100 px-4 py-2 rounded-lg shadow-md">
-      {imgId && (
+      {imgSrc && (
         <img
           className="mt-2 w-full border-solid border-black shadow-sm"
-          src={`${import.meta.env.VITE_GOOGLE_DRIVE_IMG_URL}${imgId}`}
+          src={imgSrc}
           alt="project_img"
         />
       )}

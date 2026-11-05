@@ -5,10 +5,10 @@ import { EffectCards } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/effect-cards";
 
-const googleImgId = [
-  "1mHmEA6_u4HVNLZE-P8SeiyJUOw4VWY6P",
-  "1mqLoHWEo5l-xD8fNnn6BXhM-SpX13sG4",
-  "1pND2J6AogJTsuOR6L3PGMlTaM5Ck6TVF",
+const PROFILE_IMAGES = [
+  "/images/profile/profile-1.jpg",
+  "/images/profile/profile-2.jpg",
+  "/images/profile/profile-3.jpg",
 ];
 
 export default function ProfileSwiper() {
@@ -25,13 +25,11 @@ export default function ProfileSwiper() {
       /* 클릭 슬라이드 이동 여부 */
       slideToClickedSlide={true}
     >
-      {googleImgId.map((imgId) => {
+      {PROFILE_IMAGES.map((src) => {
         return (
-          <SwiperSlide key={imgId}>
+          <SwiperSlide key={src}>
             <img
-              src={`${
-                import.meta.env.VITE_GOOGLE_DRIVE_IMG_URL
-              }${imgId}&sz=w250`}
+              src={src}
               className="w-full"
               alt="profile"
             />

@@ -12,15 +12,11 @@ export default function Answer5() {
       <p>{t("chat.question5-4")}</p>
       <div className="mt-3 flex flex-col items-center gap-2">
         <img
-          src={`${
-            import.meta.env.VITE_GOOGLE_DRIVE_IMG_URL
-          }11c9RkAEBhHRJvMHjEVgeP0QRE347en83`}
+          src="/images/answers/cross-browsing-1.png"
           alt="crossBrowsing_img"
           onClick={() => {
             setImageUrl(
-              `${
-                import.meta.env.VITE_GOOGLE_DRIVE_IMG_URL
-              }11c9RkAEBhHRJvMHjEVgeP0QRE347en83&sz=w1000`
+              "/images/answers/cross-browsing-1.png"
             );
             setOpenImagePreview(true);
           }}
@@ -56,15 +52,11 @@ export default function Answer5() {
       <p>{t("chat.question5-8")}</p>
       <div className="mt-3 flex flex-col items-center gap-2">
         <img
-          src={`${
-            import.meta.env.VITE_GOOGLE_DRIVE_IMG_URL
-          }10w0IoZz1iCmzv5ugJZrTud1KvgS1zL5s`}
+          src="/images/answers/cross-browsing-2.png"
           alt="crossBrowsing_img"
           onClick={() => {
             setImageUrl(
-              `${
-                import.meta.env.VITE_GOOGLE_DRIVE_IMG_URL
-              }10w0IoZz1iCmzv5ugJZrTud1KvgS1zL5s&sz=w1000`
+              "/images/answers/cross-browsing-2.png"
             );
             setOpenImagePreview(true);
           }}
