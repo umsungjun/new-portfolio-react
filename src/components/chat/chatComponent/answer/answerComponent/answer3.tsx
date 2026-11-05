@@ -48,15 +48,11 @@ export default function Answer3() {
           {t("chat.answer3-16")}
         </a>
         <img
-          src={`${
-            import.meta.env.VITE_GOOGLE_DRIVE_IMG_URL
-          }1YdVDqn8fWVm27aoUlxq1NHtJsvjwpgsv`}
+          src="/images/answers/search-blog.gif"
           alt="search_blog"
           onClick={() => {
             setImageUrl(
-              `${
-                import.meta.env.VITE_GOOGLE_DRIVE_IMG_URL
-              }1YdVDqn8fWVm27aoUlxq1NHtJsvjwpgsv&sz=w1000`
+              "/images/answers/search-blog.gif"
             );
             setOpenImagePreview(true);
           }}

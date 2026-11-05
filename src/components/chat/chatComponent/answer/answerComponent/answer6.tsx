@@ -21,7 +21,7 @@ export default function Answer6() {
       </p>
       <ProjectComponent
         title="New Portfolio"
-        imgId="1u6qHDayTlzeWLxR8toIkB3RtVFyOqk04"
+        imgSrc="/images/answers/new-portfolio.gif"
         date="2024.05.19 ~ 2024.06.01"
         stack="React, TypeScript, Tailwind CSS, Zustand, react-i18next, Vite"
         desc={t("chat.question6.project5")}
@@ -30,7 +30,7 @@ export default function Answer6() {
       />
       <ProjectComponent
         title="Next Portfolio"
-        imgId="1R2EIW4DGDCnzJoE2BCO6UuIITvEMQreA"
+        imgSrc="/images/answers/next-portfolio.gif"
         date="2023.06.01 ~ 2023.06.04"
         stack="NextJs, TypeScript, Tailwind CSS, BootStrapIcon, LottieFilesAnimation, Vite"
         desc={t("chat.question6.project4")}
@@ -47,7 +47,7 @@ export default function Answer6() {
       />
       <ProjectComponent
         title="Poketmon Master"
-        imgId="1xpMQBvCSBZrECtDXJll2lbpZHZK4Q-nz"
+        imgSrc="/images/answers/poketmon-master.gif"
         date="2023.03.13 ~ 2023.03.24"
         stack="React, TypeScript, Redux-Toolkit, Styled-component, Kakao SDK,Vite"
         desc={t("chat.question6.project2")}
@@ -56,7 +56,7 @@ export default function Answer6() {
       />
       <ProjectComponent
         title="ReactShop"
-        imgId="1Gs7D5TmO-plfWUiWbcqmJV_5nSeUpzxJ"
+        imgSrc="/images/answers/react-shop.gif"
         date="2023.03.02 ~ 2023.03.12"
         stack="React, TypeScript, Redux-Toolkit, Styled-component, Kakao SDK,Vite"
         desc={t("chat.question6.project1")}

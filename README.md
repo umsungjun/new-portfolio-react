@@ -1,6 +1,12 @@
 # New Portfolio(https://umsungjun.vercel.app)
 
-<img width="100%" src="https://drive.google.com/thumbnail?id=1NxpqukbWOfZgNQ6HgfycCM7XrbpVSKBb&sz=w1000"/>
+<img width="100%" src="docs/readme-cover.png"/>
+
+> **2026년 11월 5일까지 관리했습니다.**
+>
+> 지금은 주소만 살려 둔 보관 상태이고, 검색엔진 색인에서는 뺐습니다(noindex).
+>
+> 보관하면서 Google Drive 에서 불러오던 이미지를 `public/images/` 로 옮겨 저장소만으로 열립니다.
 
 ### 프로젝트 소개
 
